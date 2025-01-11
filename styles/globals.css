@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 142 72% 29%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 80%;
+    --accent: 142 72% 29%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 142 72% 29%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border text-white;
+  }
+  body {
+    @apply bg-gradient-to-b from-black to-gray-900 text-white;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+    cursor: none;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-black;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 800;
+  }
+  a, button, input, select, textarea {
+    cursor: none;
+  }
+  input, select, textarea {
+    @apply text-white bg-gray-800;
+  }
+  table {
+    @apply text-white;
+  }
+  th, td {
+    @apply text-white;
+  }
+}
+
+.blob-cursor-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.blob-cursor-main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.blob-cursor-main > div {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: rgba(34, 197, 94, 0.5);
+  border-radius: 50%;
+  filter: url(#blob);
+  pointer-events: none;
+}
+
+.blob-cursor-main > div:nth-child(1) {
+  width: 8px;
+  height: 8px;
+  filter: none;
+}
+
+.blob-cursor-main > div:nth-child(2) { opacity: 0.3; }
+.blob-cursor-main > div:nth-child(3) { opacity: 0.1; }
+
+#lights {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.blur {
+  filter: blur(4px); /* Adjust the blur amount as needed */
+  transition: filter 0.3s ease; /* Smooth transition */
+}
+/* lets see if this works */
+
+
+
+
+
+
+
+
+
+
+
+.blob-cursor-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.blob-cursor-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.blob-cursor-main > div {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  filter: url("#blob");
+}
+
+.blob-cursor-main > div:nth-child(1) {
+  width: 8px;
+  height: 8px;
+}
+
+.blob-cursor-main > div:nth-child(2) {
+  width: 16px;
+  height: 16px;
+}
+
+.blob-cursor-main > div:nth-child(3) {
+  width: 24px;
+  height: 24px;
+}
+
