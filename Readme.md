@@ -1,10 +1,9 @@
-Of course! Here's the Haveloc format with **just the two README.md files**:
 
 ---
 
 ## 📂 **Repo:** `stock-portfolio-frontend`
 
-```markdown
+
 # 📈 Stock Portfolio - Frontend
 
 This is the **frontend** of the Stock Portfolio Management System built using **Next.js 13+ with TypeScript**. It allows users to securely manage their stock portfolios, view real-time stock data, and visualize performance.
@@ -56,5 +55,4 @@ Open-source project for educational purposes.
 
 ## 📂 **Repo:** `stock-portfolio-backend`
 
-```markdown
 ---
