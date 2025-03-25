@@ -49,7 +49,6 @@ Visit `http://localhost:3000`
 
 ## 📝 License
 Open-source project for educational purposes.
-```
 
 ---
 
