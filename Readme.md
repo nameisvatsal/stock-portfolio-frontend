@@ -45,7 +45,7 @@ Visit `http://localhost:3000`
 ```
 
 ## 🔗 Backend Repo
-[Stock Portfolio Backend](https://github.com/snameisvatsal/stock-portfolio-backend)
+[Stock Portfolio Backend](https://github.com/nameisvatsal/stock-portfolio-backend)
 
 ## 📝 License
 Open-source project for educational purposes.
